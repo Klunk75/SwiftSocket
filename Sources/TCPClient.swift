@@ -38,7 +38,7 @@ import Foundation
 @_silgen_name("ytcpsocket_accept") private func c_ytcpsocket_accept(_ onsocketfd:Int32,ip:UnsafePointer<Int8>,port:UnsafePointer<Int32>,timeout:Int32) -> Int32
 @_silgen_name("ytcpsocket_port") private func c_ytcpsocket_port(_ fd:Int32) -> Int32
 
-open class TCPClient: Socket {
+@objc open class TCPClient: Socket {
   
     /*
      * connect to server
